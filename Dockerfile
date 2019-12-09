@@ -1,4 +1,4 @@
-FROM lordofthebrain/php7.2-composer:latest
+FROM lordofthebrain/php:7.2-composer-alpine
 ENV NODE_VERSION 12.13.1
 RUN apk add --no-cache --virtual .build-deps \
         binutils-gold \
