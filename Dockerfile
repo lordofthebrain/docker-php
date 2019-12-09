@@ -1,4 +1,4 @@
-FROM php:7.2-fpm-buster
+FROM php:7.3-fpm-buster
 COPY composer-installer.sh  /opt/
 RUN apt-get update && apt-get install -y libjpeg62-turbo-dev libfreetype6-dev libpng-dev libzip-dev net-tools zip \
   && sh /opt/composer-installer.sh \
