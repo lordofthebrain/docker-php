@@ -1,4 +1,4 @@
-FROM lordofthebrain/php:7.3-cypress-buster
+FROM lordofthebrain/php:7.4-cypress-buster
 RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list \
     && curl -s https://dl-ssl.google.com/linux/linux_signing_key.pub --output linux_signing_key.pub \
     && apt-key add linux_signing_key.pub \
