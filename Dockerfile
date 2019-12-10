@@ -1,6 +1,6 @@
 FROM php:7.3-fpm-alpine
 COPY composer-installer.sh  /opt/
-RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev zlib-dev \
+RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev libzip-dev \
   && sh /opt/composer-installer.sh \
   && docker-php-ext-configure gd \
     --with-gd \
